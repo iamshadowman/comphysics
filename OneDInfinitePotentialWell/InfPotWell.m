@@ -35,7 +35,7 @@ for l=1:n
   end
 
   E0(l) = bisection(E1, E2);
-  [, y0,] = odesolver(E0(l));
+  [~, y0 ,~] = odesolver(E0(l));
 
   E = E0(l)+dE;
   y1 = y2;
